@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Industrial Safety Sentinel</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header><div><p class="eyebrow">REAL-TIME INDUSTRIAL INTELLIGENCE</p><h1>Industrial Safety Sentinel</h1></div><div class="live"><i></i> LIVE MONITORING</div></header>
+  <main>
+    <section class="metrics">
+      <article><span>Total readings</span><strong id="readings">0</strong></article>
+      <article><span>Active alerts</span><strong id="open">0</strong></article>
+      <article><span>Critical events</span><strong id="critical">0</strong></article>
+      <article><span>System status</span><strong class="healthy">ONLINE</strong></article>
+    </section>
+    <section class="grid">
+      <article class="panel chart-panel"><div class="panel-title"><h2>Live Sensor Telemetry</h2><span>Last 40 readings</span></div><canvas id="chart"></canvas></article>
+      <article class="panel"><div class="panel-title"><h2>Current Conditions</h2><span id="zone">Waiting...</span></div><div id="conditions" class="conditions"></div></article>
+      <article class="panel alerts"><div class="panel-title"><h2>Safety Alerts</h2><span>Newest first</span></div><div id="alerts"></div></article>
+      <article class="panel vision"><div class="panel-title"><h2>Computer Vision Status</h2><span>Anonymous detection</span></div><div id="visionBox"><div class="camera-grid"></div><div class="person">WORKER-ANON</div><div class="zone-line">RESTRICTED ZONE</div></div><p id="visionText">PPE and zone monitoring active</p></article>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body></html>
+
