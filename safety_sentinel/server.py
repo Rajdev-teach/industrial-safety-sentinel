@@ -24,8 +24,12 @@ class DashboardHandler(SimpleHTTPRequestHandler):
         path = urlparse(self.path).path
         if path.startswith("/api/"):
             payload = self.api_payload(path)
+            status = 200
+            if payload is None:
+                status = 404
+                payload = {"error": "not found"}
             body = json.dumps(payload).encode()
-            self.send_response(200)
+            self.send_response(status)
             self.send_header("Content-Type", "application/json")
             self.send_header("Cache-Control", "no-store")
             self.send_header("Content-Length", str(len(body)))
@@ -38,7 +42,7 @@ class DashboardHandler(SimpleHTTPRequestHandler):
         if path == "/api/readings": return self.database.latest_readings()
         if path == "/api/alerts": return self.database.latest_alerts()
         if path == "/api/metrics": return self.database.metrics()
-        return {"error": "not found"}
+        return None
 
     def log_message(self, format, *args):
         return
