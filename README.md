@@ -55,17 +55,36 @@ No facial recognition is used. Computer-vision events use anonymous worker ident
 
 ## Run locally
 
-```bash
+Install [Git](https://git-scm.com/downloads) and [Python 3.10 or newer](https://www.python.org/downloads/) first. If `git` or `python` is not recognized, finish the installation, reopen your terminal (or restart VS Code), and check `git --version` and `python --version` before continuing.
+
+### Windows (PowerShell)
+
+Run these commands from the folder where you want to keep the project:
+
+```powershell
 git clone https://github.com/Rajdev-teach/industrial-safety-sentinel.git
 cd industrial-safety-sentinel
 python -m venv .venv
-source .venv/bin/activate       # Windows: .venv\Scripts\activate
-pip install -r requirements.txt
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
+.\.venv\Scripts\python.exe scripts/seed_demo.py
+.\.venv\Scripts\python.exe -m safety_sentinel.server
+```
+
+These commands use the virtual environment's Python directly, so activation and PowerShell execution-policy changes are not required.
+
+### macOS / Linux (Bash)
+
+```bash
+git clone https://github.com/Rajdev-teach/industrial-safety-sentinel.git
+cd industrial-safety-sentinel
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
 python scripts/seed_demo.py
 python -m safety_sentinel.server
 ```
 
-Open `http://localhost:8000`. The producer adds a new reading every second and the dashboard refreshes every two seconds.
+Open `http://localhost:8000`. The producer adds a new reading every second and the dashboard refreshes every two seconds. Keep the server terminal open; press `Ctrl+C` to stop it.
 
 ## API endpoints
 
