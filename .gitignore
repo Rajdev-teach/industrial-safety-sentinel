@@ -7,3 +7,8 @@ data/*.csv
 models/*.joblib
 logs/
 
+
+
+web-dist/
+.vercel/
+node_modules/

@@ -1,0 +1,3649 @@
+{
+  "mode": "recorded-synthetic-replay",
+  "model": "IsolationForest, 150 estimators, random_state=42",
+  "baseline_seed": 7,
+  "event_seed": 21,
+  "frames": [
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:00:00+00:00",
+        "device_id": "EDGE-01",
+        "zone": "Assembly-A",
+        "temperature_c": 56.22,
+        "vibration_mm_s": 3.26,
+        "forklift_speed_mph": 5.95,
+        "noise_db": 84.93,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 1,
+        "id": 1,
+        "anomaly_score": 0.06142,
+        "is_anomaly": 0
+      },
+      "alerts": [
+        {
+          "timestamp": "2026-11-17T12:00:00+00:00",
+          "device_id": "EDGE-01",
+          "zone": "Assembly-A",
+          "alert_type": "RESTRICTED_ZONE",
+          "severity": "CRITICAL",
+          "message": "Worker entered a restricted machine zone",
+          "reading_id": 1,
+          "status": "OPEN"
+        }
+      ]
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:00:02+00:00",
+        "device_id": "EDGE-02",
+        "zone": "Packaging-B",
+        "temperature_c": 71.57,
+        "vibration_mm_s": 4.43,
+        "forklift_speed_mph": 4.9,
+        "noise_db": 78.98,
+        "worker_present": 0,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 2,
+        "anomaly_score": 0.0435,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:00:04+00:00",
+        "device_id": "EDGE-03",
+        "zone": "Warehouse-C",
+        "temperature_c": 58.15,
+        "vibration_mm_s": 3.09,
+        "forklift_speed_mph": 7.56,
+        "noise_db": 77.8,
+        "worker_present": 0,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 3,
+        "anomaly_score": 0.0573,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:00:06+00:00",
+        "device_id": "EDGE-04",
+        "zone": "Welding-D",
+        "temperature_c": 66.0,
+        "vibration_mm_s": 3.83,
+        "forklift_speed_mph": 4.9,
+        "noise_db": 72.57,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 0,
+        "restricted_zone": 0,
+        "id": 4,
+        "anomaly_score": 0.08974,
+        "is_anomaly": 0
+      },
+      "alerts": [
+        {
+          "timestamp": "2026-11-17T12:00:06+00:00",
+          "device_id": "EDGE-04",
+          "zone": "Welding-D",
+          "alert_type": "MISSING_VEST",
+          "severity": "WARNING",
+          "message": "Worker detected without a high-visibility vest",
+          "reading_id": 4,
+          "status": "OPEN"
+        }
+      ]
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:00:08+00:00",
+        "device_id": "EDGE-01",
+        "zone": "Assembly-A",
+        "temperature_c": 60.36,
+        "vibration_mm_s": 4.0,
+        "forklift_speed_mph": 6.53,
+        "noise_db": 83.48,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 5,
+        "anomaly_score": 0.09028,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:00:10+00:00",
+        "device_id": "EDGE-02",
+        "zone": "Packaging-B",
+        "temperature_c": 60.84,
+        "vibration_mm_s": 3.81,
+        "forklift_speed_mph": 6.08,
+        "noise_db": 83.66,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 6,
+        "anomaly_score": 0.09528,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:00:12+00:00",
+        "device_id": "EDGE-03",
+        "zone": "Warehouse-C",
+        "temperature_c": 61.91,
+        "vibration_mm_s": 4.17,
+        "forklift_speed_mph": 4.07,
+        "noise_db": 76.11,
+        "worker_present": 0,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 7,
+        "anomaly_score": 0.12686,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:00:14+00:00",
+        "device_id": "EDGE-04",
+        "zone": "Welding-D",
+        "temperature_c": 63.76,
+        "vibration_mm_s": 5.28,
+        "forklift_speed_mph": 4.72,
+        "noise_db": 87.6,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 8,
+        "anomaly_score": 0.00506,
+        "is_anomaly": 0
+      },
+      "alerts": [
+        {
+          "timestamp": "2026-11-17T12:00:14+00:00",
+          "device_id": "EDGE-04",
+          "zone": "Welding-D",
+          "alert_type": "HIGH_NOISE",
+          "severity": "WARNING",
+          "message": "Noise 87.6 dB exceeds warning limit",
+          "reading_id": 8,
+          "status": "OPEN"
+        }
+      ]
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:00:16+00:00",
+        "device_id": "EDGE-01",
+        "zone": "Assembly-A",
+        "temperature_c": 61.48,
+        "vibration_mm_s": 3.64,
+        "forklift_speed_mph": 4.78,
+        "noise_db": 66.89,
+        "worker_present": 1,
+        "helmet_detected": 0,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 9,
+        "anomaly_score": 0.01861,
+        "is_anomaly": 0
+      },
+      "alerts": [
+        {
+          "timestamp": "2026-11-17T12:00:16+00:00",
+          "device_id": "EDGE-01",
+          "zone": "Assembly-A",
+          "alert_type": "MISSING_HELMET",
+          "severity": "CRITICAL",
+          "message": "Worker detected without a safety helmet",
+          "reading_id": 9,
+          "status": "OPEN"
+        }
+      ]
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:00:18+00:00",
+        "device_id": "EDGE-02",
+        "zone": "Packaging-B",
+        "temperature_c": 56.05,
+        "vibration_mm_s": 3.78,
+        "forklift_speed_mph": 6.08,
+        "noise_db": 77.75,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 10,
+        "anomaly_score": 0.13507,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:00:20+00:00",
+        "device_id": "EDGE-03",
+        "zone": "Warehouse-C",
+        "temperature_c": 60.86,
+        "vibration_mm_s": 1.67,
+        "forklift_speed_mph": 5.52,
+        "noise_db": 80.43,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 11,
+        "anomaly_score": 0.0475,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:00:22+00:00",
+        "device_id": "EDGE-04",
+        "zone": "Welding-D",
+        "temperature_c": 65.89,
+        "vibration_mm_s": 4.5,
+        "forklift_speed_mph": 5.01,
+        "noise_db": 75.51,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 12,
+        "anomaly_score": 0.12526,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:00:24+00:00",
+        "device_id": "EDGE-01",
+        "zone": "Assembly-A",
+        "temperature_c": 56.61,
+        "vibration_mm_s": 5.27,
+        "forklift_speed_mph": 4.1,
+        "noise_db": 69.86,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 13,
+        "anomaly_score": 0.03188,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:00:26+00:00",
+        "device_id": "EDGE-02",
+        "zone": "Packaging-B",
+        "temperature_c": 59.91,
+        "vibration_mm_s": 3.82,
+        "forklift_speed_mph": 4.94,
+        "noise_db": 85.62,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 0,
+        "restricted_zone": 0,
+        "id": 14,
+        "anomaly_score": 0.06469,
+        "is_anomaly": 0
+      },
+      "alerts": [
+        {
+          "timestamp": "2026-11-17T12:00:26+00:00",
+          "device_id": "EDGE-02",
+          "zone": "Packaging-B",
+          "alert_type": "HIGH_NOISE",
+          "severity": "WARNING",
+          "message": "Noise 85.6 dB exceeds warning limit",
+          "reading_id": 14,
+          "status": "OPEN"
+        },
+        {
+          "timestamp": "2026-11-17T12:00:26+00:00",
+          "device_id": "EDGE-02",
+          "zone": "Packaging-B",
+          "alert_type": "MISSING_VEST",
+          "severity": "WARNING",
+          "message": "Worker detected without a high-visibility vest",
+          "reading_id": 14,
+          "status": "OPEN"
+        }
+      ]
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:00:28+00:00",
+        "device_id": "EDGE-03",
+        "zone": "Warehouse-C",
+        "temperature_c": 64.94,
+        "vibration_mm_s": 3.05,
+        "forklift_speed_mph": 5.92,
+        "noise_db": 79.82,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 0,
+        "restricted_zone": 0,
+        "id": 15,
+        "anomaly_score": 0.10453,
+        "is_anomaly": 0
+      },
+      "alerts": [
+        {
+          "timestamp": "2026-11-17T12:00:28+00:00",
+          "device_id": "EDGE-03",
+          "zone": "Warehouse-C",
+          "alert_type": "MISSING_VEST",
+          "severity": "WARNING",
+          "message": "Worker detected without a high-visibility vest",
+          "reading_id": 15,
+          "status": "OPEN"
+        }
+      ]
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:00:30+00:00",
+        "device_id": "EDGE-04",
+        "zone": "Welding-D",
+        "temperature_c": 64.85,
+        "vibration_mm_s": 3.54,
+        "forklift_speed_mph": 13.81,
+        "noise_db": 75.5,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 16,
+        "anomaly_score": -0.0143,
+        "is_anomaly": 1
+      },
+      "alerts": [
+        {
+          "timestamp": "2026-11-17T12:00:30+00:00",
+          "device_id": "EDGE-04",
+          "zone": "Welding-D",
+          "alert_type": "UNSAFE_SPEED",
+          "severity": "CRITICAL",
+          "message": "Forklift speed 13.8 mph exceeds critical limit",
+          "reading_id": 16,
+          "status": "OPEN"
+        }
+      ]
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:00:32+00:00",
+        "device_id": "EDGE-01",
+        "zone": "Assembly-A",
+        "temperature_c": 62.51,
+        "vibration_mm_s": 3.43,
+        "forklift_speed_mph": 4.56,
+        "noise_db": 77.31,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 0,
+        "restricted_zone": 0,
+        "id": 17,
+        "anomaly_score": 0.12409,
+        "is_anomaly": 0
+      },
+      "alerts": [
+        {
+          "timestamp": "2026-11-17T12:00:32+00:00",
+          "device_id": "EDGE-01",
+          "zone": "Assembly-A",
+          "alert_type": "MISSING_VEST",
+          "severity": "WARNING",
+          "message": "Worker detected without a high-visibility vest",
+          "reading_id": 17,
+          "status": "OPEN"
+        }
+      ]
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:00:34+00:00",
+        "device_id": "EDGE-02",
+        "zone": "Packaging-B",
+        "temperature_c": 66.64,
+        "vibration_mm_s": 4.42,
+        "forklift_speed_mph": 4.05,
+        "noise_db": 71.86,
+        "worker_present": 0,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 18,
+        "anomaly_score": 0.0477,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:00:36+00:00",
+        "device_id": "EDGE-03",
+        "zone": "Warehouse-C",
+        "temperature_c": 49.53,
+        "vibration_mm_s": 5.75,
+        "forklift_speed_mph": 6.03,
+        "noise_db": 76.8,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 19,
+        "anomaly_score": 0.02242,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:00:38+00:00",
+        "device_id": "EDGE-04",
+        "zone": "Welding-D",
+        "temperature_c": 66.37,
+        "vibration_mm_s": 5.91,
+        "forklift_speed_mph": 5.15,
+        "noise_db": 76.28,
+        "worker_present": 1,
+        "helmet_detected": 0,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 20,
+        "anomaly_score": 0.075,
+        "is_anomaly": 0
+      },
+      "alerts": [
+        {
+          "timestamp": "2026-11-17T12:00:38+00:00",
+          "device_id": "EDGE-04",
+          "zone": "Welding-D",
+          "alert_type": "MISSING_HELMET",
+          "severity": "CRITICAL",
+          "message": "Worker detected without a safety helmet",
+          "reading_id": 20,
+          "status": "OPEN"
+        }
+      ]
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:00:40+00:00",
+        "device_id": "EDGE-01",
+        "zone": "Assembly-A",
+        "temperature_c": 62.1,
+        "vibration_mm_s": 3.62,
+        "forklift_speed_mph": 5.43,
+        "noise_db": 71.28,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 21,
+        "anomaly_score": 0.09619,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:00:42+00:00",
+        "device_id": "EDGE-02",
+        "zone": "Packaging-B",
+        "temperature_c": 64.47,
+        "vibration_mm_s": 3.73,
+        "forklift_speed_mph": 6.3,
+        "noise_db": 74.97,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 22,
+        "anomaly_score": 0.11677,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:00:44+00:00",
+        "device_id": "EDGE-03",
+        "zone": "Warehouse-C",
+        "temperature_c": 53.47,
+        "vibration_mm_s": 3.08,
+        "forklift_speed_mph": 5.52,
+        "noise_db": 80.33,
+        "worker_present": 0,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 23,
+        "anomaly_score": 0.09743,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:00:46+00:00",
+        "device_id": "EDGE-04",
+        "zone": "Welding-D",
+        "temperature_c": 63.71,
+        "vibration_mm_s": 2.39,
+        "forklift_speed_mph": 3.94,
+        "noise_db": 78.33,
+        "worker_present": 0,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 24,
+        "anomaly_score": 0.07197,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:00:48+00:00",
+        "device_id": "EDGE-01",
+        "zone": "Assembly-A",
+        "temperature_c": 56.34,
+        "vibration_mm_s": 3.65,
+        "forklift_speed_mph": 4.51,
+        "noise_db": 77.65,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 25,
+        "anomaly_score": 0.12766,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:00:50+00:00",
+        "device_id": "EDGE-02",
+        "zone": "Packaging-B",
+        "temperature_c": 58.46,
+        "vibration_mm_s": 4.86,
+        "forklift_speed_mph": 7.11,
+        "noise_db": 97.03,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 26,
+        "anomaly_score": -0.02991,
+        "is_anomaly": 1
+      },
+      "alerts": [
+        {
+          "timestamp": "2026-11-17T12:00:50+00:00",
+          "device_id": "EDGE-02",
+          "zone": "Packaging-B",
+          "alert_type": "HIGH_NOISE",
+          "severity": "CRITICAL",
+          "message": "Noise 97.0 dB exceeds critical limit",
+          "reading_id": 26,
+          "status": "OPEN"
+        }
+      ]
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:00:52+00:00",
+        "device_id": "EDGE-03",
+        "zone": "Warehouse-C",
+        "temperature_c": 53.4,
+        "vibration_mm_s": 4.69,
+        "forklift_speed_mph": 7.21,
+        "noise_db": 78.71,
+        "worker_present": 0,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 27,
+        "anomaly_score": 0.08255,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:00:54+00:00",
+        "device_id": "EDGE-04",
+        "zone": "Welding-D",
+        "temperature_c": 56.11,
+        "vibration_mm_s": 4.91,
+        "forklift_speed_mph": 5.56,
+        "noise_db": 79.25,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 28,
+        "anomaly_score": 0.13765,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:00:56+00:00",
+        "device_id": "EDGE-01",
+        "zone": "Assembly-A",
+        "temperature_c": 59.09,
+        "vibration_mm_s": 3.0,
+        "forklift_speed_mph": 5.6,
+        "noise_db": 81.93,
+        "worker_present": 0,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 29,
+        "anomaly_score": 0.1047,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:00:58+00:00",
+        "device_id": "EDGE-02",
+        "zone": "Packaging-B",
+        "temperature_c": 62.06,
+        "vibration_mm_s": 4.09,
+        "forklift_speed_mph": 4.11,
+        "noise_db": 78.59,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 30,
+        "anomaly_score": 0.1314,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:01:00+00:00",
+        "device_id": "EDGE-03",
+        "zone": "Warehouse-C",
+        "temperature_c": 60.4,
+        "vibration_mm_s": 2.57,
+        "forklift_speed_mph": 6.68,
+        "noise_db": 73.2,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 31,
+        "anomaly_score": 0.04924,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:01:02+00:00",
+        "device_id": "EDGE-04",
+        "zone": "Welding-D",
+        "temperature_c": 52.99,
+        "vibration_mm_s": 2.84,
+        "forklift_speed_mph": 9.02,
+        "noise_db": 75.28,
+        "worker_present": 1,
+        "helmet_detected": 0,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 32,
+        "anomaly_score": -0.05325,
+        "is_anomaly": 1
+      },
+      "alerts": [
+        {
+          "timestamp": "2026-11-17T12:01:02+00:00",
+          "device_id": "EDGE-04",
+          "zone": "Welding-D",
+          "alert_type": "UNSAFE_SPEED",
+          "severity": "WARNING",
+          "message": "Forklift speed 9.0 mph exceeds warning limit",
+          "reading_id": 32,
+          "status": "OPEN"
+        },
+        {
+          "timestamp": "2026-11-17T12:01:02+00:00",
+          "device_id": "EDGE-04",
+          "zone": "Welding-D",
+          "alert_type": "MISSING_HELMET",
+          "severity": "CRITICAL",
+          "message": "Worker detected without a safety helmet",
+          "reading_id": 32,
+          "status": "OPEN"
+        }
+      ]
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:01:04+00:00",
+        "device_id": "EDGE-01",
+        "zone": "Assembly-A",
+        "temperature_c": 63.88,
+        "vibration_mm_s": 5.31,
+        "forklift_speed_mph": 6.39,
+        "noise_db": 79.63,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 33,
+        "anomaly_score": 0.10921,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:01:06+00:00",
+        "device_id": "EDGE-02",
+        "zone": "Packaging-B",
+        "temperature_c": 67.51,
+        "vibration_mm_s": 3.73,
+        "forklift_speed_mph": 5.8,
+        "noise_db": 81.48,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 34,
+        "anomaly_score": 0.0887,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:01:08+00:00",
+        "device_id": "EDGE-03",
+        "zone": "Warehouse-C",
+        "temperature_c": 58.32,
+        "vibration_mm_s": 4.96,
+        "forklift_speed_mph": 5.89,
+        "noise_db": 76.09,
+        "worker_present": 0,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 35,
+        "anomaly_score": 0.13672,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:01:10+00:00",
+        "device_id": "EDGE-04",
+        "zone": "Welding-D",
+        "temperature_c": 56.71,
+        "vibration_mm_s": 3.69,
+        "forklift_speed_mph": 3.43,
+        "noise_db": 84.55,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 36,
+        "anomaly_score": 0.03081,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:01:12+00:00",
+        "device_id": "EDGE-01",
+        "zone": "Assembly-A",
+        "temperature_c": 62.25,
+        "vibration_mm_s": 5.16,
+        "forklift_speed_mph": 5.39,
+        "noise_db": 80.56,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 0,
+        "restricted_zone": 0,
+        "id": 37,
+        "anomaly_score": 0.125,
+        "is_anomaly": 0
+      },
+      "alerts": [
+        {
+          "timestamp": "2026-11-17T12:01:12+00:00",
+          "device_id": "EDGE-01",
+          "zone": "Assembly-A",
+          "alert_type": "MISSING_VEST",
+          "severity": "WARNING",
+          "message": "Worker detected without a high-visibility vest",
+          "reading_id": 37,
+          "status": "OPEN"
+        }
+      ]
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:01:14+00:00",
+        "device_id": "EDGE-02",
+        "zone": "Packaging-B",
+        "temperature_c": 59.72,
+        "vibration_mm_s": 3.99,
+        "forklift_speed_mph": 5.16,
+        "noise_db": 77.99,
+        "worker_present": 0,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 38,
+        "anomaly_score": 0.14404,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:01:16+00:00",
+        "device_id": "EDGE-03",
+        "zone": "Warehouse-C",
+        "temperature_c": 60.04,
+        "vibration_mm_s": 4.34,
+        "forklift_speed_mph": 4.99,
+        "noise_db": 77.51,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 39,
+        "anomaly_score": 0.15081,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:01:18+00:00",
+        "device_id": "EDGE-04",
+        "zone": "Welding-D",
+        "temperature_c": 65.86,
+        "vibration_mm_s": 5.66,
+        "forklift_speed_mph": 6.15,
+        "noise_db": 73.59,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 40,
+        "anomaly_score": 0.05876,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:01:20+00:00",
+        "device_id": "EDGE-01",
+        "zone": "Assembly-A",
+        "temperature_c": 61.4,
+        "vibration_mm_s": 6.16,
+        "forklift_speed_mph": 7.01,
+        "noise_db": 70.42,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 0,
+        "restricted_zone": 0,
+        "id": 41,
+        "anomaly_score": -0.00938,
+        "is_anomaly": 1
+      },
+      "alerts": [
+        {
+          "timestamp": "2026-11-17T12:01:20+00:00",
+          "device_id": "EDGE-01",
+          "zone": "Assembly-A",
+          "alert_type": "MISSING_VEST",
+          "severity": "WARNING",
+          "message": "Worker detected without a high-visibility vest",
+          "reading_id": 41,
+          "status": "OPEN"
+        }
+      ]
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:01:22+00:00",
+        "device_id": "EDGE-02",
+        "zone": "Packaging-B",
+        "temperature_c": 66.7,
+        "vibration_mm_s": 3.13,
+        "forklift_speed_mph": 5.55,
+        "noise_db": 75.42,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 42,
+        "anomaly_score": 0.09685,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:01:24+00:00",
+        "device_id": "EDGE-03",
+        "zone": "Warehouse-C",
+        "temperature_c": 51.18,
+        "vibration_mm_s": 4.56,
+        "forklift_speed_mph": 5.0,
+        "noise_db": 80.7,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 43,
+        "anomaly_score": 0.08626,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:01:26+00:00",
+        "device_id": "EDGE-04",
+        "zone": "Welding-D",
+        "temperature_c": 61.69,
+        "vibration_mm_s": 4.38,
+        "forklift_speed_mph": 3.7,
+        "noise_db": 77.56,
+        "worker_present": 0,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 44,
+        "anomaly_score": 0.12092,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:01:28+00:00",
+        "device_id": "EDGE-01",
+        "zone": "Assembly-A",
+        "temperature_c": 90.19,
+        "vibration_mm_s": 4.31,
+        "forklift_speed_mph": 3.69,
+        "noise_db": 78.19,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 45,
+        "anomaly_score": -0.02426,
+        "is_anomaly": 1
+      },
+      "alerts": [
+        {
+          "timestamp": "2026-11-17T12:01:28+00:00",
+          "device_id": "EDGE-01",
+          "zone": "Assembly-A",
+          "alert_type": "HIGH_TEMPERATURE",
+          "severity": "CRITICAL",
+          "message": "Temperature 90.2 \u00b0C exceeds critical limit",
+          "reading_id": 45,
+          "status": "OPEN"
+        }
+      ]
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:01:30+00:00",
+        "device_id": "EDGE-02",
+        "zone": "Packaging-B",
+        "temperature_c": 61.03,
+        "vibration_mm_s": 4.88,
+        "forklift_speed_mph": 6.71,
+        "noise_db": 76.8,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 46,
+        "anomaly_score": 0.11691,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:01:32+00:00",
+        "device_id": "EDGE-03",
+        "zone": "Warehouse-C",
+        "temperature_c": 54.45,
+        "vibration_mm_s": 3.23,
+        "forklift_speed_mph": 5.35,
+        "noise_db": 77.36,
+        "worker_present": 0,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 47,
+        "anomaly_score": 0.11872,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:01:34+00:00",
+        "device_id": "EDGE-04",
+        "zone": "Welding-D",
+        "temperature_c": 63.55,
+        "vibration_mm_s": 3.31,
+        "forklift_speed_mph": 6.46,
+        "noise_db": 78.38,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 48,
+        "anomaly_score": 0.11598,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:01:36+00:00",
+        "device_id": "EDGE-01",
+        "zone": "Assembly-A",
+        "temperature_c": 58.06,
+        "vibration_mm_s": 3.88,
+        "forklift_speed_mph": 5.19,
+        "noise_db": 80.55,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 49,
+        "anomaly_score": 0.13194,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:01:38+00:00",
+        "device_id": "EDGE-02",
+        "zone": "Packaging-B",
+        "temperature_c": 61.82,
+        "vibration_mm_s": 4.97,
+        "forklift_speed_mph": 6.65,
+        "noise_db": 78.61,
+        "worker_present": 0,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 50,
+        "anomaly_score": 0.11792,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:01:40+00:00",
+        "device_id": "EDGE-03",
+        "zone": "Warehouse-C",
+        "temperature_c": 65.82,
+        "vibration_mm_s": 3.99,
+        "forklift_speed_mph": 4.77,
+        "noise_db": 79.5,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 51,
+        "anomaly_score": 0.11945,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:01:42+00:00",
+        "device_id": "EDGE-04",
+        "zone": "Welding-D",
+        "temperature_c": 70.54,
+        "vibration_mm_s": 3.53,
+        "forklift_speed_mph": 5.6,
+        "noise_db": 83.4,
+        "worker_present": 0,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 52,
+        "anomaly_score": 0.02198,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:01:44+00:00",
+        "device_id": "EDGE-01",
+        "zone": "Assembly-A",
+        "temperature_c": 64.36,
+        "vibration_mm_s": 3.13,
+        "forklift_speed_mph": 8.14,
+        "noise_db": 77.68,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 53,
+        "anomaly_score": 0.01949,
+        "is_anomaly": 0
+      },
+      "alerts": [
+        {
+          "timestamp": "2026-11-17T12:01:44+00:00",
+          "device_id": "EDGE-01",
+          "zone": "Assembly-A",
+          "alert_type": "UNSAFE_SPEED",
+          "severity": "WARNING",
+          "message": "Forklift speed 8.1 mph exceeds warning limit",
+          "reading_id": 53,
+          "status": "OPEN"
+        }
+      ]
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:01:46+00:00",
+        "device_id": "EDGE-02",
+        "zone": "Packaging-B",
+        "temperature_c": 59.82,
+        "vibration_mm_s": 3.44,
+        "forklift_speed_mph": 4.37,
+        "noise_db": 77.22,
+        "worker_present": 0,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 54,
+        "anomaly_score": 0.13153,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:01:48+00:00",
+        "device_id": "EDGE-03",
+        "zone": "Warehouse-C",
+        "temperature_c": 63.9,
+        "vibration_mm_s": 5.57,
+        "forklift_speed_mph": 4.49,
+        "noise_db": 75.07,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 55,
+        "anomaly_score": 0.09862,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:01:50+00:00",
+        "device_id": "EDGE-04",
+        "zone": "Welding-D",
+        "temperature_c": 61.65,
+        "vibration_mm_s": 3.51,
+        "forklift_speed_mph": 13.73,
+        "noise_db": 78.16,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 56,
+        "anomaly_score": 0.00713,
+        "is_anomaly": 0
+      },
+      "alerts": [
+        {
+          "timestamp": "2026-11-17T12:01:50+00:00",
+          "device_id": "EDGE-04",
+          "zone": "Welding-D",
+          "alert_type": "UNSAFE_SPEED",
+          "severity": "CRITICAL",
+          "message": "Forklift speed 13.7 mph exceeds critical limit",
+          "reading_id": 56,
+          "status": "OPEN"
+        }
+      ]
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:01:52+00:00",
+        "device_id": "EDGE-01",
+        "zone": "Assembly-A",
+        "temperature_c": 58.1,
+        "vibration_mm_s": 0.74,
+        "forklift_speed_mph": 4.64,
+        "noise_db": 80.8,
+        "worker_present": 0,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 57,
+        "anomaly_score": 0.00975,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:01:54+00:00",
+        "device_id": "EDGE-02",
+        "zone": "Packaging-B",
+        "temperature_c": 54.29,
+        "vibration_mm_s": 3.49,
+        "forklift_speed_mph": 6.29,
+        "noise_db": 77.96,
+        "worker_present": 1,
+        "helmet_detected": 0,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 58,
+        "anomaly_score": 0.11357,
+        "is_anomaly": 0
+      },
+      "alerts": [
+        {
+          "timestamp": "2026-11-17T12:01:54+00:00",
+          "device_id": "EDGE-02",
+          "zone": "Packaging-B",
+          "alert_type": "MISSING_HELMET",
+          "severity": "CRITICAL",
+          "message": "Worker detected without a safety helmet",
+          "reading_id": 58,
+          "status": "OPEN"
+        }
+      ]
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:01:56+00:00",
+        "device_id": "EDGE-03",
+        "zone": "Warehouse-C",
+        "temperature_c": 63.04,
+        "vibration_mm_s": 4.93,
+        "forklift_speed_mph": 4.56,
+        "noise_db": 82.08,
+        "worker_present": 0,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 59,
+        "anomaly_score": 0.10502,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:01:58+00:00",
+        "device_id": "EDGE-04",
+        "zone": "Welding-D",
+        "temperature_c": 65.53,
+        "vibration_mm_s": 2.83,
+        "forklift_speed_mph": 4.86,
+        "noise_db": 80.15,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 60,
+        "anomaly_score": 0.08995,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:02:00+00:00",
+        "device_id": "EDGE-01",
+        "zone": "Assembly-A",
+        "temperature_c": 66.06,
+        "vibration_mm_s": 2.31,
+        "forklift_speed_mph": 6.41,
+        "noise_db": 79.6,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 61,
+        "anomaly_score": 0.06515,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:02:02+00:00",
+        "device_id": "EDGE-02",
+        "zone": "Packaging-B",
+        "temperature_c": 58.27,
+        "vibration_mm_s": 3.36,
+        "forklift_speed_mph": 5.66,
+        "noise_db": 80.67,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 62,
+        "anomaly_score": 0.12549,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:02:04+00:00",
+        "device_id": "EDGE-03",
+        "zone": "Warehouse-C",
+        "temperature_c": 56.31,
+        "vibration_mm_s": 5.57,
+        "forklift_speed_mph": 4.97,
+        "noise_db": 107.55,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 63,
+        "anomaly_score": -0.01501,
+        "is_anomaly": 1
+      },
+      "alerts": [
+        {
+          "timestamp": "2026-11-17T12:02:04+00:00",
+          "device_id": "EDGE-03",
+          "zone": "Warehouse-C",
+          "alert_type": "HIGH_NOISE",
+          "severity": "CRITICAL",
+          "message": "Noise 107.5 dB exceeds critical limit",
+          "reading_id": 63,
+          "status": "OPEN"
+        }
+      ]
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:02:06+00:00",
+        "device_id": "EDGE-04",
+        "zone": "Welding-D",
+        "temperature_c": 55.2,
+        "vibration_mm_s": 3.41,
+        "forklift_speed_mph": 6.37,
+        "noise_db": 102.21,
+        "worker_present": 0,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 64,
+        "anomaly_score": -0.03074,
+        "is_anomaly": 1
+      },
+      "alerts": [
+        {
+          "timestamp": "2026-11-17T12:02:06+00:00",
+          "device_id": "EDGE-04",
+          "zone": "Welding-D",
+          "alert_type": "HIGH_NOISE",
+          "severity": "CRITICAL",
+          "message": "Noise 102.2 dB exceeds critical limit",
+          "reading_id": 64,
+          "status": "OPEN"
+        }
+      ]
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:02:08+00:00",
+        "device_id": "EDGE-01",
+        "zone": "Assembly-A",
+        "temperature_c": 55.01,
+        "vibration_mm_s": 5.31,
+        "forklift_speed_mph": 4.75,
+        "noise_db": 75.13,
+        "worker_present": 0,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 65,
+        "anomaly_score": 0.10699,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:02:10+00:00",
+        "device_id": "EDGE-02",
+        "zone": "Packaging-B",
+        "temperature_c": 56.37,
+        "vibration_mm_s": 3.28,
+        "forklift_speed_mph": 4.65,
+        "noise_db": 77.75,
+        "worker_present": 0,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 66,
+        "anomaly_score": 0.12392,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:02:12+00:00",
+        "device_id": "EDGE-03",
+        "zone": "Warehouse-C",
+        "temperature_c": 56.57,
+        "vibration_mm_s": 3.25,
+        "forklift_speed_mph": 5.79,
+        "noise_db": 83.23,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 67,
+        "anomaly_score": 0.08825,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:02:14+00:00",
+        "device_id": "EDGE-04",
+        "zone": "Welding-D",
+        "temperature_c": 61.35,
+        "vibration_mm_s": 3.27,
+        "forklift_speed_mph": 5.1,
+        "noise_db": 80.46,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 68,
+        "anomaly_score": 0.12831,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:02:16+00:00",
+        "device_id": "EDGE-01",
+        "zone": "Assembly-A",
+        "temperature_c": 89.66,
+        "vibration_mm_s": 3.56,
+        "forklift_speed_mph": 6.63,
+        "noise_db": 81.19,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 69,
+        "anomaly_score": -0.02813,
+        "is_anomaly": 1
+      },
+      "alerts": [
+        {
+          "timestamp": "2026-11-17T12:02:16+00:00",
+          "device_id": "EDGE-01",
+          "zone": "Assembly-A",
+          "alert_type": "HIGH_TEMPERATURE",
+          "severity": "CRITICAL",
+          "message": "Temperature 89.7 \u00b0C exceeds critical limit",
+          "reading_id": 69,
+          "status": "OPEN"
+        }
+      ]
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:02:18+00:00",
+        "device_id": "EDGE-02",
+        "zone": "Packaging-B",
+        "temperature_c": 63.21,
+        "vibration_mm_s": 4.62,
+        "forklift_speed_mph": 5.06,
+        "noise_db": 76.95,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 70,
+        "anomaly_score": 0.13914,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:02:20+00:00",
+        "device_id": "EDGE-03",
+        "zone": "Warehouse-C",
+        "temperature_c": 59.65,
+        "vibration_mm_s": 4.07,
+        "forklift_speed_mph": 5.16,
+        "noise_db": 81.31,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 71,
+        "anomaly_score": 0.13183,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:02:22+00:00",
+        "device_id": "EDGE-04",
+        "zone": "Welding-D",
+        "temperature_c": 49.46,
+        "vibration_mm_s": 4.22,
+        "forklift_speed_mph": 5.71,
+        "noise_db": 72.78,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 72,
+        "anomaly_score": 0.03122,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:02:24+00:00",
+        "device_id": "EDGE-01",
+        "zone": "Assembly-A",
+        "temperature_c": 61.31,
+        "vibration_mm_s": 2.47,
+        "forklift_speed_mph": 12.54,
+        "noise_db": 77.54,
+        "worker_present": 0,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 73,
+        "anomaly_score": -0.01721,
+        "is_anomaly": 1
+      },
+      "alerts": [
+        {
+          "timestamp": "2026-11-17T12:02:24+00:00",
+          "device_id": "EDGE-01",
+          "zone": "Assembly-A",
+          "alert_type": "UNSAFE_SPEED",
+          "severity": "CRITICAL",
+          "message": "Forklift speed 12.5 mph exceeds critical limit",
+          "reading_id": 73,
+          "status": "OPEN"
+        }
+      ]
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:02:26+00:00",
+        "device_id": "EDGE-02",
+        "zone": "Packaging-B",
+        "temperature_c": 63.6,
+        "vibration_mm_s": 3.74,
+        "forklift_speed_mph": 6.69,
+        "noise_db": 81.52,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 74,
+        "anomaly_score": 0.09296,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:02:28+00:00",
+        "device_id": "EDGE-03",
+        "zone": "Warehouse-C",
+        "temperature_c": 58.12,
+        "vibration_mm_s": 12.82,
+        "forklift_speed_mph": 5.28,
+        "noise_db": 83.97,
+        "worker_present": 0,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 75,
+        "anomaly_score": -0.02443,
+        "is_anomaly": 1
+      },
+      "alerts": [
+        {
+          "timestamp": "2026-11-17T12:02:28+00:00",
+          "device_id": "EDGE-03",
+          "zone": "Warehouse-C",
+          "alert_type": "EXCESSIVE_VIBRATION",
+          "severity": "CRITICAL",
+          "message": "Vibration 12.8 mm/s exceeds critical limit",
+          "reading_id": 75,
+          "status": "OPEN"
+        }
+      ]
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:02:30+00:00",
+        "device_id": "EDGE-04",
+        "zone": "Welding-D",
+        "temperature_c": 57.64,
+        "vibration_mm_s": 4.16,
+        "forklift_speed_mph": 6.33,
+        "noise_db": 77.51,
+        "worker_present": 0,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 76,
+        "anomaly_score": 0.13711,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:02:32+00:00",
+        "device_id": "EDGE-01",
+        "zone": "Assembly-A",
+        "temperature_c": 66.71,
+        "vibration_mm_s": 4.65,
+        "forklift_speed_mph": 4.5,
+        "noise_db": 75.31,
+        "worker_present": 0,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 77,
+        "anomaly_score": 0.09875,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:02:34+00:00",
+        "device_id": "EDGE-02",
+        "zone": "Packaging-B",
+        "temperature_c": 57.02,
+        "vibration_mm_s": 4.19,
+        "forklift_speed_mph": 5.65,
+        "noise_db": 80.36,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 0,
+        "restricted_zone": 0,
+        "id": 78,
+        "anomaly_score": 0.13868,
+        "is_anomaly": 0
+      },
+      "alerts": [
+        {
+          "timestamp": "2026-11-17T12:02:34+00:00",
+          "device_id": "EDGE-02",
+          "zone": "Packaging-B",
+          "alert_type": "MISSING_VEST",
+          "severity": "WARNING",
+          "message": "Worker detected without a high-visibility vest",
+          "reading_id": 78,
+          "status": "OPEN"
+        }
+      ]
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:02:36+00:00",
+        "device_id": "EDGE-03",
+        "zone": "Warehouse-C",
+        "temperature_c": 63.69,
+        "vibration_mm_s": 4.01,
+        "forklift_speed_mph": 4.08,
+        "noise_db": 84.12,
+        "worker_present": 0,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 79,
+        "anomaly_score": 0.06493,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:02:38+00:00",
+        "device_id": "EDGE-04",
+        "zone": "Welding-D",
+        "temperature_c": 62.55,
+        "vibration_mm_s": 3.79,
+        "forklift_speed_mph": 5.05,
+        "noise_db": 98.04,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 80,
+        "anomaly_score": -0.00409,
+        "is_anomaly": 1
+      },
+      "alerts": [
+        {
+          "timestamp": "2026-11-17T12:02:38+00:00",
+          "device_id": "EDGE-04",
+          "zone": "Welding-D",
+          "alert_type": "HIGH_NOISE",
+          "severity": "CRITICAL",
+          "message": "Noise 98.0 dB exceeds critical limit",
+          "reading_id": 80,
+          "status": "OPEN"
+        }
+      ]
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:02:40+00:00",
+        "device_id": "EDGE-01",
+        "zone": "Assembly-A",
+        "temperature_c": 54.2,
+        "vibration_mm_s": 1.66,
+        "forklift_speed_mph": 6.15,
+        "noise_db": 75.93,
+        "worker_present": 0,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 81,
+        "anomaly_score": 0.01924,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:02:42+00:00",
+        "device_id": "EDGE-02",
+        "zone": "Packaging-B",
+        "temperature_c": 50.03,
+        "vibration_mm_s": 6.26,
+        "forklift_speed_mph": 6.1,
+        "noise_db": 81.48,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 82,
+        "anomaly_score": -0.01167,
+        "is_anomaly": 1
+      },
+      "alerts": [
+        {
+          "timestamp": "2026-11-17T12:02:42+00:00",
+          "device_id": "EDGE-02",
+          "zone": "Packaging-B",
+          "alert_type": "ML_ANOMALY",
+          "severity": "WARNING",
+          "message": "Machine-learning model detected an unusual sensor pattern",
+          "reading_id": 82,
+          "status": "OPEN"
+        }
+      ]
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:02:44+00:00",
+        "device_id": "EDGE-03",
+        "zone": "Warehouse-C",
+        "temperature_c": 53.73,
+        "vibration_mm_s": 3.02,
+        "forklift_speed_mph": 6.1,
+        "noise_db": 70.14,
+        "worker_present": 0,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 83,
+        "anomaly_score": 0.0174,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:02:46+00:00",
+        "device_id": "EDGE-04",
+        "zone": "Welding-D",
+        "temperature_c": 65.83,
+        "vibration_mm_s": 4.03,
+        "forklift_speed_mph": 5.07,
+        "noise_db": 73.42,
+        "worker_present": 0,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 84,
+        "anomaly_score": 0.10289,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:02:48+00:00",
+        "device_id": "EDGE-01",
+        "zone": "Assembly-A",
+        "temperature_c": 53.31,
+        "vibration_mm_s": 4.89,
+        "forklift_speed_mph": 5.32,
+        "noise_db": 80.02,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 85,
+        "anomaly_score": 0.10468,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:02:50+00:00",
+        "device_id": "EDGE-02",
+        "zone": "Packaging-B",
+        "temperature_c": 51.86,
+        "vibration_mm_s": 4.73,
+        "forklift_speed_mph": 14.09,
+        "noise_db": 79.71,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 86,
+        "anomaly_score": -0.03766,
+        "is_anomaly": 1
+      },
+      "alerts": [
+        {
+          "timestamp": "2026-11-17T12:02:50+00:00",
+          "device_id": "EDGE-02",
+          "zone": "Packaging-B",
+          "alert_type": "UNSAFE_SPEED",
+          "severity": "CRITICAL",
+          "message": "Forklift speed 14.1 mph exceeds critical limit",
+          "reading_id": 86,
+          "status": "OPEN"
+        }
+      ]
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:02:52+00:00",
+        "device_id": "EDGE-03",
+        "zone": "Warehouse-C",
+        "temperature_c": 61.3,
+        "vibration_mm_s": 1.51,
+        "forklift_speed_mph": 4.58,
+        "noise_db": 76.92,
+        "worker_present": 1,
+        "helmet_detected": 0,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 87,
+        "anomaly_score": 0.03608,
+        "is_anomaly": 0
+      },
+      "alerts": [
+        {
+          "timestamp": "2026-11-17T12:02:52+00:00",
+          "device_id": "EDGE-03",
+          "zone": "Warehouse-C",
+          "alert_type": "MISSING_HELMET",
+          "severity": "CRITICAL",
+          "message": "Worker detected without a safety helmet",
+          "reading_id": 87,
+          "status": "OPEN"
+        }
+      ]
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:02:54+00:00",
+        "device_id": "EDGE-04",
+        "zone": "Welding-D",
+        "temperature_c": 49.38,
+        "vibration_mm_s": 4.75,
+        "forklift_speed_mph": 6.19,
+        "noise_db": 75.87,
+        "worker_present": 0,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 88,
+        "anomaly_score": 0.04265,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:02:56+00:00",
+        "device_id": "EDGE-01",
+        "zone": "Assembly-A",
+        "temperature_c": 55.91,
+        "vibration_mm_s": 2.94,
+        "forklift_speed_mph": 5.7,
+        "noise_db": 80.28,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 89,
+        "anomaly_score": 0.11411,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:02:58+00:00",
+        "device_id": "EDGE-02",
+        "zone": "Packaging-B",
+        "temperature_c": 100.46,
+        "vibration_mm_s": 4.72,
+        "forklift_speed_mph": 5.0,
+        "noise_db": 73.56,
+        "worker_present": 0,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 90,
+        "anomaly_score": -0.01833,
+        "is_anomaly": 1
+      },
+      "alerts": [
+        {
+          "timestamp": "2026-11-17T12:02:58+00:00",
+          "device_id": "EDGE-02",
+          "zone": "Packaging-B",
+          "alert_type": "HIGH_TEMPERATURE",
+          "severity": "CRITICAL",
+          "message": "Temperature 100.5 \u00b0C exceeds critical limit",
+          "reading_id": 90,
+          "status": "OPEN"
+        }
+      ]
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:03:00+00:00",
+        "device_id": "EDGE-03",
+        "zone": "Warehouse-C",
+        "temperature_c": 89.13,
+        "vibration_mm_s": 3.49,
+        "forklift_speed_mph": 6.46,
+        "noise_db": 73.43,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 91,
+        "anomaly_score": -0.02452,
+        "is_anomaly": 1
+      },
+      "alerts": [
+        {
+          "timestamp": "2026-11-17T12:03:00+00:00",
+          "device_id": "EDGE-03",
+          "zone": "Warehouse-C",
+          "alert_type": "HIGH_TEMPERATURE",
+          "severity": "CRITICAL",
+          "message": "Temperature 89.1 \u00b0C exceeds critical limit",
+          "reading_id": 91,
+          "status": "OPEN"
+        }
+      ]
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:03:02+00:00",
+        "device_id": "EDGE-04",
+        "zone": "Welding-D",
+        "temperature_c": 56.28,
+        "vibration_mm_s": 5.77,
+        "forklift_speed_mph": 3.91,
+        "noise_db": 82.74,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 92,
+        "anomaly_score": 0.03972,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:03:04+00:00",
+        "device_id": "EDGE-01",
+        "zone": "Assembly-A",
+        "temperature_c": 61.3,
+        "vibration_mm_s": 6.22,
+        "forklift_speed_mph": 5.6,
+        "noise_db": 75.43,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 0,
+        "restricted_zone": 0,
+        "id": 93,
+        "anomaly_score": 0.07282,
+        "is_anomaly": 0
+      },
+      "alerts": [
+        {
+          "timestamp": "2026-11-17T12:03:04+00:00",
+          "device_id": "EDGE-01",
+          "zone": "Assembly-A",
+          "alert_type": "MISSING_VEST",
+          "severity": "WARNING",
+          "message": "Worker detected without a high-visibility vest",
+          "reading_id": 93,
+          "status": "OPEN"
+        }
+      ]
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:03:06+00:00",
+        "device_id": "EDGE-02",
+        "zone": "Packaging-B",
+        "temperature_c": 63.24,
+        "vibration_mm_s": 5.8,
+        "forklift_speed_mph": 5.14,
+        "noise_db": 78.49,
+        "worker_present": 0,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 94,
+        "anomaly_score": 0.10063,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:03:08+00:00",
+        "device_id": "EDGE-03",
+        "zone": "Warehouse-C",
+        "temperature_c": 65.19,
+        "vibration_mm_s": 3.39,
+        "forklift_speed_mph": 7.8,
+        "noise_db": 72.75,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 95,
+        "anomaly_score": 0.01162,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:03:10+00:00",
+        "device_id": "EDGE-04",
+        "zone": "Welding-D",
+        "temperature_c": 61.53,
+        "vibration_mm_s": 0.95,
+        "forklift_speed_mph": 3.6,
+        "noise_db": 77.16,
+        "worker_present": 1,
+        "helmet_detected": 0,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 96,
+        "anomaly_score": 0.00399,
+        "is_anomaly": 0
+      },
+      "alerts": [
+        {
+          "timestamp": "2026-11-17T12:03:10+00:00",
+          "device_id": "EDGE-04",
+          "zone": "Welding-D",
+          "alert_type": "MISSING_HELMET",
+          "severity": "CRITICAL",
+          "message": "Worker detected without a safety helmet",
+          "reading_id": 96,
+          "status": "OPEN"
+        }
+      ]
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:03:12+00:00",
+        "device_id": "EDGE-01",
+        "zone": "Assembly-A",
+        "temperature_c": 62.1,
+        "vibration_mm_s": 4.08,
+        "forklift_speed_mph": 2.62,
+        "noise_db": 84.3,
+        "worker_present": 0,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 97,
+        "anomaly_score": -0.00356,
+        "is_anomaly": 1
+      },
+      "alerts": [
+        {
+          "timestamp": "2026-11-17T12:03:12+00:00",
+          "device_id": "EDGE-01",
+          "zone": "Assembly-A",
+          "alert_type": "ML_ANOMALY",
+          "severity": "WARNING",
+          "message": "Machine-learning model detected an unusual sensor pattern",
+          "reading_id": 97,
+          "status": "OPEN"
+        }
+      ]
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:03:14+00:00",
+        "device_id": "EDGE-02",
+        "zone": "Packaging-B",
+        "temperature_c": 56.08,
+        "vibration_mm_s": 4.26,
+        "forklift_speed_mph": 3.93,
+        "noise_db": 75.71,
+        "worker_present": 0,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 98,
+        "anomaly_score": 0.11608,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:03:16+00:00",
+        "device_id": "EDGE-03",
+        "zone": "Warehouse-C",
+        "temperature_c": 62.48,
+        "vibration_mm_s": 3.93,
+        "forklift_speed_mph": 7.02,
+        "noise_db": 75.14,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 99,
+        "anomaly_score": 0.09864,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:03:18+00:00",
+        "device_id": "EDGE-04",
+        "zone": "Welding-D",
+        "temperature_c": 55.96,
+        "vibration_mm_s": 5.17,
+        "forklift_speed_mph": 6.96,
+        "noise_db": 74.97,
+        "worker_present": 0,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 100,
+        "anomaly_score": 0.08319,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:03:20+00:00",
+        "device_id": "EDGE-01",
+        "zone": "Assembly-A",
+        "temperature_c": 54.07,
+        "vibration_mm_s": 4.43,
+        "forklift_speed_mph": 5.58,
+        "noise_db": 83.06,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 101,
+        "anomaly_score": 0.10536,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:03:22+00:00",
+        "device_id": "EDGE-02",
+        "zone": "Packaging-B",
+        "temperature_c": 55.14,
+        "vibration_mm_s": 3.52,
+        "forklift_speed_mph": 4.74,
+        "noise_db": 79.39,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 102,
+        "anomaly_score": 0.12335,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:03:24+00:00",
+        "device_id": "EDGE-03",
+        "zone": "Warehouse-C",
+        "temperature_c": 47.75,
+        "vibration_mm_s": 3.49,
+        "forklift_speed_mph": 6.96,
+        "noise_db": 86.27,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 0,
+        "restricted_zone": 0,
+        "id": 103,
+        "anomaly_score": -0.05538,
+        "is_anomaly": 1
+      },
+      "alerts": [
+        {
+          "timestamp": "2026-11-17T12:03:24+00:00",
+          "device_id": "EDGE-03",
+          "zone": "Warehouse-C",
+          "alert_type": "HIGH_NOISE",
+          "severity": "WARNING",
+          "message": "Noise 86.3 dB exceeds warning limit",
+          "reading_id": 103,
+          "status": "OPEN"
+        },
+        {
+          "timestamp": "2026-11-17T12:03:24+00:00",
+          "device_id": "EDGE-03",
+          "zone": "Warehouse-C",
+          "alert_type": "MISSING_VEST",
+          "severity": "WARNING",
+          "message": "Worker detected without a high-visibility vest",
+          "reading_id": 103,
+          "status": "OPEN"
+        }
+      ]
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:03:26+00:00",
+        "device_id": "EDGE-04",
+        "zone": "Welding-D",
+        "temperature_c": 57.87,
+        "vibration_mm_s": 4.19,
+        "forklift_speed_mph": 3.77,
+        "noise_db": 73.53,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 104,
+        "anomaly_score": 0.09863,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:03:28+00:00",
+        "device_id": "EDGE-01",
+        "zone": "Assembly-A",
+        "temperature_c": 63.05,
+        "vibration_mm_s": 4.17,
+        "forklift_speed_mph": 7.55,
+        "noise_db": 78.48,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 105,
+        "anomaly_score": 0.07848,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:03:30+00:00",
+        "device_id": "EDGE-02",
+        "zone": "Packaging-B",
+        "temperature_c": 54.65,
+        "vibration_mm_s": 0.69,
+        "forklift_speed_mph": 6.19,
+        "noise_db": 74.71,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 106,
+        "anomaly_score": -0.00327,
+        "is_anomaly": 1
+      },
+      "alerts": [
+        {
+          "timestamp": "2026-11-17T12:03:30+00:00",
+          "device_id": "EDGE-02",
+          "zone": "Packaging-B",
+          "alert_type": "ML_ANOMALY",
+          "severity": "WARNING",
+          "message": "Machine-learning model detected an unusual sensor pattern",
+          "reading_id": 106,
+          "status": "OPEN"
+        }
+      ]
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:03:32+00:00",
+        "device_id": "EDGE-03",
+        "zone": "Warehouse-C",
+        "temperature_c": 65.1,
+        "vibration_mm_s": 3.97,
+        "forklift_speed_mph": 6.86,
+        "noise_db": 108.0,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 107,
+        "anomaly_score": -0.03847,
+        "is_anomaly": 1
+      },
+      "alerts": [
+        {
+          "timestamp": "2026-11-17T12:03:32+00:00",
+          "device_id": "EDGE-03",
+          "zone": "Warehouse-C",
+          "alert_type": "HIGH_NOISE",
+          "severity": "CRITICAL",
+          "message": "Noise 108.0 dB exceeds critical limit",
+          "reading_id": 107,
+          "status": "OPEN"
+        }
+      ]
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:03:34+00:00",
+        "device_id": "EDGE-04",
+        "zone": "Welding-D",
+        "temperature_c": 61.38,
+        "vibration_mm_s": 3.96,
+        "forklift_speed_mph": 4.75,
+        "noise_db": 80.95,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 108,
+        "anomaly_score": 0.13118,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:03:36+00:00",
+        "device_id": "EDGE-01",
+        "zone": "Assembly-A",
+        "temperature_c": 63.52,
+        "vibration_mm_s": 3.98,
+        "forklift_speed_mph": 5.93,
+        "noise_db": 81.32,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 1,
+        "id": 109,
+        "anomaly_score": 0.11908,
+        "is_anomaly": 0
+      },
+      "alerts": [
+        {
+          "timestamp": "2026-11-17T12:03:36+00:00",
+          "device_id": "EDGE-01",
+          "zone": "Assembly-A",
+          "alert_type": "RESTRICTED_ZONE",
+          "severity": "CRITICAL",
+          "message": "Worker entered a restricted machine zone",
+          "reading_id": 109,
+          "status": "OPEN"
+        }
+      ]
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:03:38+00:00",
+        "device_id": "EDGE-02",
+        "zone": "Packaging-B",
+        "temperature_c": 58.65,
+        "vibration_mm_s": 2.58,
+        "forklift_speed_mph": 8.09,
+        "noise_db": 83.07,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 1,
+        "id": 110,
+        "anomaly_score": -0.02227,
+        "is_anomaly": 1
+      },
+      "alerts": [
+        {
+          "timestamp": "2026-11-17T12:03:38+00:00",
+          "device_id": "EDGE-02",
+          "zone": "Packaging-B",
+          "alert_type": "UNSAFE_SPEED",
+          "severity": "WARNING",
+          "message": "Forklift speed 8.1 mph exceeds warning limit",
+          "reading_id": 110,
+          "status": "OPEN"
+        },
+        {
+          "timestamp": "2026-11-17T12:03:38+00:00",
+          "device_id": "EDGE-02",
+          "zone": "Packaging-B",
+          "alert_type": "RESTRICTED_ZONE",
+          "severity": "CRITICAL",
+          "message": "Worker entered a restricted machine zone",
+          "reading_id": 110,
+          "status": "OPEN"
+        }
+      ]
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:03:40+00:00",
+        "device_id": "EDGE-03",
+        "zone": "Warehouse-C",
+        "temperature_c": 52.61,
+        "vibration_mm_s": 5.43,
+        "forklift_speed_mph": 5.16,
+        "noise_db": 78.26,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 111,
+        "anomaly_score": 0.0895,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:03:42+00:00",
+        "device_id": "EDGE-04",
+        "zone": "Welding-D",
+        "temperature_c": 55.19,
+        "vibration_mm_s": 4.56,
+        "forklift_speed_mph": 6.57,
+        "noise_db": 77.15,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 112,
+        "anomaly_score": 0.1188,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:03:44+00:00",
+        "device_id": "EDGE-01",
+        "zone": "Assembly-A",
+        "temperature_c": 63.43,
+        "vibration_mm_s": 4.85,
+        "forklift_speed_mph": 6.38,
+        "noise_db": 80.59,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 113,
+        "anomaly_score": 0.11221,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:03:46+00:00",
+        "device_id": "EDGE-02",
+        "zone": "Packaging-B",
+        "temperature_c": 66.96,
+        "vibration_mm_s": 5.09,
+        "forklift_speed_mph": 3.87,
+        "noise_db": 81.85,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 114,
+        "anomaly_score": 0.06623,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:03:48+00:00",
+        "device_id": "EDGE-03",
+        "zone": "Warehouse-C",
+        "temperature_c": 55.62,
+        "vibration_mm_s": 4.21,
+        "forklift_speed_mph": 6.47,
+        "noise_db": 80.4,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 115,
+        "anomaly_score": 0.11693,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:03:50+00:00",
+        "device_id": "EDGE-04",
+        "zone": "Welding-D",
+        "temperature_c": 61.63,
+        "vibration_mm_s": 3.13,
+        "forklift_speed_mph": 5.25,
+        "noise_db": 76.95,
+        "worker_present": 0,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 116,
+        "anomaly_score": 0.1231,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:03:52+00:00",
+        "device_id": "EDGE-01",
+        "zone": "Assembly-A",
+        "temperature_c": 59.46,
+        "vibration_mm_s": 5.44,
+        "forklift_speed_mph": 5.21,
+        "noise_db": 85.06,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 117,
+        "anomaly_score": 0.06543,
+        "is_anomaly": 0
+      },
+      "alerts": [
+        {
+          "timestamp": "2026-11-17T12:03:52+00:00",
+          "device_id": "EDGE-01",
+          "zone": "Assembly-A",
+          "alert_type": "HIGH_NOISE",
+          "severity": "WARNING",
+          "message": "Noise 85.1 dB exceeds warning limit",
+          "reading_id": 117,
+          "status": "OPEN"
+        }
+      ]
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:03:54+00:00",
+        "device_id": "EDGE-02",
+        "zone": "Packaging-B",
+        "temperature_c": 56.66,
+        "vibration_mm_s": 4.89,
+        "forklift_speed_mph": 7.95,
+        "noise_db": 75.1,
+        "worker_present": 0,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 118,
+        "anomaly_score": 0.02496,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:03:56+00:00",
+        "device_id": "EDGE-03",
+        "zone": "Warehouse-C",
+        "temperature_c": 61.99,
+        "vibration_mm_s": 2.4,
+        "forklift_speed_mph": 10.88,
+        "noise_db": 82.26,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 119,
+        "anomaly_score": -0.04201,
+        "is_anomaly": 1
+      },
+      "alerts": [
+        {
+          "timestamp": "2026-11-17T12:03:56+00:00",
+          "device_id": "EDGE-03",
+          "zone": "Warehouse-C",
+          "alert_type": "UNSAFE_SPEED",
+          "severity": "CRITICAL",
+          "message": "Forklift speed 10.9 mph exceeds critical limit",
+          "reading_id": 119,
+          "status": "OPEN"
+        }
+      ]
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:03:58+00:00",
+        "device_id": "EDGE-04",
+        "zone": "Welding-D",
+        "temperature_c": 100.08,
+        "vibration_mm_s": 3.41,
+        "forklift_speed_mph": 6.2,
+        "noise_db": 74.51,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 120,
+        "anomaly_score": -0.01581,
+        "is_anomaly": 1
+      },
+      "alerts": [
+        {
+          "timestamp": "2026-11-17T12:03:58+00:00",
+          "device_id": "EDGE-04",
+          "zone": "Welding-D",
+          "alert_type": "HIGH_TEMPERATURE",
+          "severity": "CRITICAL",
+          "message": "Temperature 100.1 \u00b0C exceeds critical limit",
+          "reading_id": 120,
+          "status": "OPEN"
+        }
+      ]
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:04:00+00:00",
+        "device_id": "EDGE-01",
+        "zone": "Assembly-A",
+        "temperature_c": 63.03,
+        "vibration_mm_s": 3.89,
+        "forklift_speed_mph": 4.48,
+        "noise_db": 74.44,
+        "worker_present": 1,
+        "helmet_detected": 0,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 121,
+        "anomaly_score": 0.12704,
+        "is_anomaly": 0
+      },
+      "alerts": [
+        {
+          "timestamp": "2026-11-17T12:04:00+00:00",
+          "device_id": "EDGE-01",
+          "zone": "Assembly-A",
+          "alert_type": "MISSING_HELMET",
+          "severity": "CRITICAL",
+          "message": "Worker detected without a safety helmet",
+          "reading_id": 121,
+          "status": "OPEN"
+        }
+      ]
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:04:02+00:00",
+        "device_id": "EDGE-02",
+        "zone": "Packaging-B",
+        "temperature_c": 65.52,
+        "vibration_mm_s": 5.77,
+        "forklift_speed_mph": 2.95,
+        "noise_db": 84.23,
+        "worker_present": 0,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 122,
+        "anomaly_score": -0.03848,
+        "is_anomaly": 1
+      },
+      "alerts": [
+        {
+          "timestamp": "2026-11-17T12:04:02+00:00",
+          "device_id": "EDGE-02",
+          "zone": "Packaging-B",
+          "alert_type": "ML_ANOMALY",
+          "severity": "WARNING",
+          "message": "Machine-learning model detected an unusual sensor pattern",
+          "reading_id": 122,
+          "status": "OPEN"
+        }
+      ]
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:04:04+00:00",
+        "device_id": "EDGE-03",
+        "zone": "Warehouse-C",
+        "temperature_c": 56.9,
+        "vibration_mm_s": 4.6,
+        "forklift_speed_mph": 5.37,
+        "noise_db": 80.68,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 123,
+        "anomaly_score": 0.13438,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:04:06+00:00",
+        "device_id": "EDGE-04",
+        "zone": "Welding-D",
+        "temperature_c": 53.34,
+        "vibration_mm_s": 3.17,
+        "forklift_speed_mph": 3.0,
+        "noise_db": 74.23,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 1,
+        "id": 124,
+        "anomaly_score": -0.0004,
+        "is_anomaly": 1
+      },
+      "alerts": [
+        {
+          "timestamp": "2026-11-17T12:04:06+00:00",
+          "device_id": "EDGE-04",
+          "zone": "Welding-D",
+          "alert_type": "RESTRICTED_ZONE",
+          "severity": "CRITICAL",
+          "message": "Worker entered a restricted machine zone",
+          "reading_id": 124,
+          "status": "OPEN"
+        }
+      ]
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:04:08+00:00",
+        "device_id": "EDGE-01",
+        "zone": "Assembly-A",
+        "temperature_c": 60.11,
+        "vibration_mm_s": 3.9,
+        "forklift_speed_mph": 5.59,
+        "noise_db": 70.2,
+        "worker_present": 0,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 125,
+        "anomaly_score": 0.07821,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:04:10+00:00",
+        "device_id": "EDGE-02",
+        "zone": "Packaging-B",
+        "temperature_c": 58.42,
+        "vibration_mm_s": 4.38,
+        "forklift_speed_mph": 7.47,
+        "noise_db": 77.28,
+        "worker_present": 0,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 126,
+        "anomaly_score": 0.09517,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:04:12+00:00",
+        "device_id": "EDGE-03",
+        "zone": "Warehouse-C",
+        "temperature_c": 61.02,
+        "vibration_mm_s": 4.02,
+        "forklift_speed_mph": 2.56,
+        "noise_db": 78.94,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 127,
+        "anomaly_score": 0.03224,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:04:14+00:00",
+        "device_id": "EDGE-04",
+        "zone": "Welding-D",
+        "temperature_c": 68.54,
+        "vibration_mm_s": 5.25,
+        "forklift_speed_mph": 6.23,
+        "noise_db": 72.41,
+        "worker_present": 0,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 128,
+        "anomaly_score": 0.04023,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:04:16+00:00",
+        "device_id": "EDGE-01",
+        "zone": "Assembly-A",
+        "temperature_c": 60.59,
+        "vibration_mm_s": 4.49,
+        "forklift_speed_mph": 7.97,
+        "noise_db": 75.84,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 129,
+        "anomaly_score": 0.0408,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:04:18+00:00",
+        "device_id": "EDGE-02",
+        "zone": "Packaging-B",
+        "temperature_c": 57.34,
+        "vibration_mm_s": 3.67,
+        "forklift_speed_mph": 5.99,
+        "noise_db": 78.26,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 130,
+        "anomaly_score": 0.13355,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:04:20+00:00",
+        "device_id": "EDGE-03",
+        "zone": "Warehouse-C",
+        "temperature_c": 55.84,
+        "vibration_mm_s": 5.05,
+        "forklift_speed_mph": 11.84,
+        "noise_db": 77.19,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 131,
+        "anomaly_score": -0.00396,
+        "is_anomaly": 1
+      },
+      "alerts": [
+        {
+          "timestamp": "2026-11-17T12:04:20+00:00",
+          "device_id": "EDGE-03",
+          "zone": "Warehouse-C",
+          "alert_type": "UNSAFE_SPEED",
+          "severity": "CRITICAL",
+          "message": "Forklift speed 11.8 mph exceeds critical limit",
+          "reading_id": 131,
+          "status": "OPEN"
+        }
+      ]
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:04:22+00:00",
+        "device_id": "EDGE-04",
+        "zone": "Welding-D",
+        "temperature_c": 63.14,
+        "vibration_mm_s": 5.24,
+        "forklift_speed_mph": 4.47,
+        "noise_db": 73.42,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 132,
+        "anomaly_score": 0.10201,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:04:24+00:00",
+        "device_id": "EDGE-01",
+        "zone": "Assembly-A",
+        "temperature_c": 59.38,
+        "vibration_mm_s": 6.65,
+        "forklift_speed_mph": 6.08,
+        "noise_db": 80.44,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 133,
+        "anomaly_score": 0.03599,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:04:26+00:00",
+        "device_id": "EDGE-02",
+        "zone": "Packaging-B",
+        "temperature_c": 66.26,
+        "vibration_mm_s": 3.46,
+        "forklift_speed_mph": 6.36,
+        "noise_db": 87.1,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 134,
+        "anomaly_score": 0.00054,
+        "is_anomaly": 0
+      },
+      "alerts": [
+        {
+          "timestamp": "2026-11-17T12:04:26+00:00",
+          "device_id": "EDGE-02",
+          "zone": "Packaging-B",
+          "alert_type": "HIGH_NOISE",
+          "severity": "WARNING",
+          "message": "Noise 87.1 dB exceeds warning limit",
+          "reading_id": 134,
+          "status": "OPEN"
+        }
+      ]
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:04:28+00:00",
+        "device_id": "EDGE-03",
+        "zone": "Warehouse-C",
+        "temperature_c": 56.99,
+        "vibration_mm_s": 5.14,
+        "forklift_speed_mph": 6.47,
+        "noise_db": 77.06,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 135,
+        "anomaly_score": 0.11599,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:04:30+00:00",
+        "device_id": "EDGE-04",
+        "zone": "Welding-D",
+        "temperature_c": 62.63,
+        "vibration_mm_s": 3.38,
+        "forklift_speed_mph": 3.16,
+        "noise_db": 75.48,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 136,
+        "anomaly_score": 0.05875,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:04:32+00:00",
+        "device_id": "EDGE-01",
+        "zone": "Assembly-A",
+        "temperature_c": 53.98,
+        "vibration_mm_s": 5.07,
+        "forklift_speed_mph": 5.22,
+        "noise_db": 80.13,
+        "worker_present": 1,
+        "helmet_detected": 0,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 137,
+        "anomaly_score": 0.10302,
+        "is_anomaly": 0
+      },
+      "alerts": [
+        {
+          "timestamp": "2026-11-17T12:04:32+00:00",
+          "device_id": "EDGE-01",
+          "zone": "Assembly-A",
+          "alert_type": "MISSING_HELMET",
+          "severity": "CRITICAL",
+          "message": "Worker detected without a safety helmet",
+          "reading_id": 137,
+          "status": "OPEN"
+        }
+      ]
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:04:34+00:00",
+        "device_id": "EDGE-02",
+        "zone": "Packaging-B",
+        "temperature_c": 64.13,
+        "vibration_mm_s": 5.57,
+        "forklift_speed_mph": 4.1,
+        "noise_db": 79.41,
+        "worker_present": 0,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 138,
+        "anomaly_score": 0.09098,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:04:36+00:00",
+        "device_id": "EDGE-03",
+        "zone": "Warehouse-C",
+        "temperature_c": 53.38,
+        "vibration_mm_s": 4.82,
+        "forklift_speed_mph": 6.96,
+        "noise_db": 84.51,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 0,
+        "restricted_zone": 0,
+        "id": 139,
+        "anomaly_score": 0.03766,
+        "is_anomaly": 0
+      },
+      "alerts": [
+        {
+          "timestamp": "2026-11-17T12:04:36+00:00",
+          "device_id": "EDGE-03",
+          "zone": "Warehouse-C",
+          "alert_type": "MISSING_VEST",
+          "severity": "WARNING",
+          "message": "Worker detected without a high-visibility vest",
+          "reading_id": 139,
+          "status": "OPEN"
+        }
+      ]
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:04:38+00:00",
+        "device_id": "EDGE-04",
+        "zone": "Welding-D",
+        "temperature_c": 65.22,
+        "vibration_mm_s": 4.05,
+        "forklift_speed_mph": 5.23,
+        "noise_db": 87.34,
+        "worker_present": 0,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 140,
+        "anomaly_score": 0.01647,
+        "is_anomaly": 0
+      },
+      "alerts": [
+        {
+          "timestamp": "2026-11-17T12:04:38+00:00",
+          "device_id": "EDGE-04",
+          "zone": "Welding-D",
+          "alert_type": "HIGH_NOISE",
+          "severity": "WARNING",
+          "message": "Noise 87.3 dB exceeds warning limit",
+          "reading_id": 140,
+          "status": "OPEN"
+        }
+      ]
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:04:40+00:00",
+        "device_id": "EDGE-01",
+        "zone": "Assembly-A",
+        "temperature_c": 60.1,
+        "vibration_mm_s": 5.44,
+        "forklift_speed_mph": 5.29,
+        "noise_db": 76.68,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 141,
+        "anomaly_score": 0.1182,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:04:42+00:00",
+        "device_id": "EDGE-02",
+        "zone": "Packaging-B",
+        "temperature_c": 58.71,
+        "vibration_mm_s": 3.06,
+        "forklift_speed_mph": 5.03,
+        "noise_db": 73.67,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 142,
+        "anomaly_score": 0.11216,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:04:44+00:00",
+        "device_id": "EDGE-03",
+        "zone": "Warehouse-C",
+        "temperature_c": 58.97,
+        "vibration_mm_s": 2.94,
+        "forklift_speed_mph": 4.6,
+        "noise_db": 75.53,
+        "worker_present": 0,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 143,
+        "anomaly_score": 0.11503,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:04:46+00:00",
+        "device_id": "EDGE-04",
+        "zone": "Welding-D",
+        "temperature_c": 63.01,
+        "vibration_mm_s": 2.44,
+        "forklift_speed_mph": 6.46,
+        "noise_db": 74.08,
+        "worker_present": 0,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 144,
+        "anomaly_score": 0.06338,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:04:48+00:00",
+        "device_id": "EDGE-01",
+        "zone": "Assembly-A",
+        "temperature_c": 61.38,
+        "vibration_mm_s": 5.1,
+        "forklift_speed_mph": 4.85,
+        "noise_db": 76.14,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 145,
+        "anomaly_score": 0.12937,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:04:50+00:00",
+        "device_id": "EDGE-02",
+        "zone": "Packaging-B",
+        "temperature_c": 56.85,
+        "vibration_mm_s": 5.6,
+        "forklift_speed_mph": 6.43,
+        "noise_db": 83.97,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 146,
+        "anomaly_score": 0.0579,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:04:52+00:00",
+        "device_id": "EDGE-03",
+        "zone": "Warehouse-C",
+        "temperature_c": 56.84,
+        "vibration_mm_s": 2.58,
+        "forklift_speed_mph": 6.37,
+        "noise_db": 78.57,
+        "worker_present": 0,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 147,
+        "anomaly_score": 0.08947,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:04:54+00:00",
+        "device_id": "EDGE-04",
+        "zone": "Welding-D",
+        "temperature_c": 67.46,
+        "vibration_mm_s": 3.93,
+        "forklift_speed_mph": 5.94,
+        "noise_db": 80.27,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 148,
+        "anomaly_score": 0.10254,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:04:56+00:00",
+        "device_id": "EDGE-01",
+        "zone": "Assembly-A",
+        "temperature_c": 58.89,
+        "vibration_mm_s": 4.36,
+        "forklift_speed_mph": 4.23,
+        "noise_db": 78.46,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 149,
+        "anomaly_score": 0.14303,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:04:58+00:00",
+        "device_id": "EDGE-02",
+        "zone": "Packaging-B",
+        "temperature_c": 67.6,
+        "vibration_mm_s": 4.84,
+        "forklift_speed_mph": 5.43,
+        "noise_db": 75.91,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 150,
+        "anomaly_score": 0.10094,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:05:00+00:00",
+        "device_id": "EDGE-03",
+        "zone": "Warehouse-C",
+        "temperature_c": 63.93,
+        "vibration_mm_s": 3.2,
+        "forklift_speed_mph": 5.14,
+        "noise_db": 81.94,
+        "worker_present": 0,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 151,
+        "anomaly_score": 0.10068,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:05:02+00:00",
+        "device_id": "EDGE-04",
+        "zone": "Welding-D",
+        "temperature_c": 52.84,
+        "vibration_mm_s": 3.18,
+        "forklift_speed_mph": 4.28,
+        "noise_db": 76.98,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 0,
+        "restricted_zone": 0,
+        "id": 152,
+        "anomaly_score": 0.09071,
+        "is_anomaly": 0
+      },
+      "alerts": [
+        {
+          "timestamp": "2026-11-17T12:05:02+00:00",
+          "device_id": "EDGE-04",
+          "zone": "Welding-D",
+          "alert_type": "MISSING_VEST",
+          "severity": "WARNING",
+          "message": "Worker detected without a high-visibility vest",
+          "reading_id": 152,
+          "status": "OPEN"
+        }
+      ]
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:05:04+00:00",
+        "device_id": "EDGE-01",
+        "zone": "Assembly-A",
+        "temperature_c": 58.06,
+        "vibration_mm_s": 5.39,
+        "forklift_speed_mph": 4.64,
+        "noise_db": 70.8,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 153,
+        "anomaly_score": 0.05269,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:05:06+00:00",
+        "device_id": "EDGE-02",
+        "zone": "Packaging-B",
+        "temperature_c": 52.53,
+        "vibration_mm_s": 2.43,
+        "forklift_speed_mph": 5.23,
+        "noise_db": 77.36,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 154,
+        "anomaly_score": 0.06246,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:05:08+00:00",
+        "device_id": "EDGE-03",
+        "zone": "Warehouse-C",
+        "temperature_c": 60.52,
+        "vibration_mm_s": 4.11,
+        "forklift_speed_mph": 6.59,
+        "noise_db": 77.76,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 0,
+        "restricted_zone": 0,
+        "id": 155,
+        "anomaly_score": 0.1358,
+        "is_anomaly": 0
+      },
+      "alerts": [
+        {
+          "timestamp": "2026-11-17T12:05:08+00:00",
+          "device_id": "EDGE-03",
+          "zone": "Warehouse-C",
+          "alert_type": "MISSING_VEST",
+          "severity": "WARNING",
+          "message": "Worker detected without a high-visibility vest",
+          "reading_id": 155,
+          "status": "OPEN"
+        }
+      ]
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:05:10+00:00",
+        "device_id": "EDGE-04",
+        "zone": "Welding-D",
+        "temperature_c": 62.71,
+        "vibration_mm_s": 4.94,
+        "forklift_speed_mph": 6.35,
+        "noise_db": 80.81,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 156,
+        "anomaly_score": 0.11046,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:05:12+00:00",
+        "device_id": "EDGE-01",
+        "zone": "Assembly-A",
+        "temperature_c": 53.1,
+        "vibration_mm_s": 13.44,
+        "forklift_speed_mph": 5.97,
+        "noise_db": 73.49,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 157,
+        "anomaly_score": -0.03561,
+        "is_anomaly": 1
+      },
+      "alerts": [
+        {
+          "timestamp": "2026-11-17T12:05:12+00:00",
+          "device_id": "EDGE-01",
+          "zone": "Assembly-A",
+          "alert_type": "EXCESSIVE_VIBRATION",
+          "severity": "CRITICAL",
+          "message": "Vibration 13.4 mm/s exceeds critical limit",
+          "reading_id": 157,
+          "status": "OPEN"
+        }
+      ]
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:05:14+00:00",
+        "device_id": "EDGE-02",
+        "zone": "Packaging-B",
+        "temperature_c": 56.24,
+        "vibration_mm_s": 4.56,
+        "forklift_speed_mph": 4.83,
+        "noise_db": 80.3,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 158,
+        "anomaly_score": 0.1314,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:05:16+00:00",
+        "device_id": "EDGE-03",
+        "zone": "Warehouse-C",
+        "temperature_c": 55.61,
+        "vibration_mm_s": 4.33,
+        "forklift_speed_mph": 5.07,
+        "noise_db": 78.14,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 159,
+        "anomaly_score": 0.14019,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    },
+    {
+      "reading": {
+        "timestamp": "2026-11-17T12:05:18+00:00",
+        "device_id": "EDGE-04",
+        "zone": "Welding-D",
+        "temperature_c": 53.72,
+        "vibration_mm_s": 5.01,
+        "forklift_speed_mph": 5.25,
+        "noise_db": 82.99,
+        "worker_present": 1,
+        "helmet_detected": 1,
+        "vest_detected": 1,
+        "restricted_zone": 0,
+        "id": 160,
+        "anomaly_score": 0.08475,
+        "is_anomaly": 0
+      },
+      "alerts": []
+    }
+  ]
+}

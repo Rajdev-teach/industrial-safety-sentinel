@@ -53,6 +53,22 @@ No facial recognition is used. Computer-vision events use anonymous worker ident
 | Dashboard | Responsive HTML, CSS, Canvas and JavaScript |
 | Quality | Pytest, GitHub Actions and deterministic fixtures |
 
+## Deploy the demo on Vercel
+
+Import this repository in Vercel with the repository root as the project root. The committed `vercel.json` builds a static replay with Node.js and publishes **web-dist**. It does not install Python packages or run the live Python server. No application secrets or external database are required for this recorded demo.
+
+The Vercel version is explicitly labeled **recorded synthetic replay**. It plays 160 committed synthetic events whose Isolation Forest scores and rule alerts were computed offline with the real project code. Pause, resume, and restart controls let a recruiter inspect the sequence. Timestamps are recording timestamps. Replaying does not create new telemetry or run live inference.
+
+The local Python application continues to simulate a live feed with SQLite persistence and model inference. That long-running process and local SQLite file are not suitable for Vercel Functions as-is. A production live deployment needs hosted persistence and an ingestion service.
+
+```sh
+npm run build
+```
+
+To regenerate the recording after changing the detector or model, install the Python requirements and run `python scripts/record_web_demo.py`, review the generated data, and commit it. The Vercel build uses the reviewed recording.
+
+When connected to a Vercel project, the production branch can deploy automatically on GitHub pushes under that project's settings. Repository configuration alone does not establish a live deployment.
+
 ## Run locally
 
 Install [Git](https://git-scm.com/downloads) and [Python 3.10 or newer](https://www.python.org/downloads/) first. If `git` or `python` is not recognized, finish the installation, reopen your terminal (or restart VS Code), and check `git --version` and `python --version` before continuing.
@@ -118,3 +134,4 @@ The repository includes a seeded screenshot and short MP4 showing simulated live
 ## Responsible use
 
 This is a portfolio demonstration, not a certified safety system. Production deployment requires validated sensors, approved camera governance, human review, documented thresholds, cybersecurity controls, and compliance with site policies and applicable regulations.
+

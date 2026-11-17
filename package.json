@@ -1,0 +1,10 @@
+{
+  "name": "industrial-safety-sentinel-demo",
+  "version": "1.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/replay.test.mjs",
+    "build": "node --check dashboard/app.js && npm test && node scripts/build-web-demo.mjs"
+  }
+}
