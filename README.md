@@ -1,5 +1,9 @@
 # Industrial Safety Sentinel
 
+[**Open the live Vercel demo**](https://industrial-safety-sentinel.vercel.app/)
+
+The hosted demo replays recorded synthetic events with precomputed model scores and alerts. It is separate from the local Python service described below.
+
 [![Tests](https://github.com/Rajdev-teach/industrial-safety-sentinel/actions/workflows/tests.yml/badge.svg)](https://github.com/Rajdev-teach/industrial-safety-sentinel/actions)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://python.org)
 [![License](https://img.shields.io/badge/License-MIT-22c55e.svg)](LICENSE)
@@ -54,6 +58,10 @@ No facial recognition is used. Computer-vision events use anonymous worker ident
 | Quality | Pytest, GitHub Actions and deterministic fixtures |
 
 ## Deploy the demo on Vercel
+
+**Production:** [industrial-safety-sentinel.vercel.app](https://industrial-safety-sentinel.vercel.app/) — published November 18, 2026.
+
+This release was uploaded as a tested static build. Automatic redeployment from GitHub is not connected; re-upload the generated `web-dist/` output after updates, or connect the repository to enable it.
 
 Import this repository in Vercel with the repository root as the project root. The committed `vercel.json` builds a static replay with Node.js and publishes **web-dist**. It does not install Python packages or run the live Python server. No application secrets or external database are required for this recorded demo.
 
