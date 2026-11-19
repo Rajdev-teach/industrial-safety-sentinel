@@ -13,3 +13,7 @@ assert.ok(html.includes('id="data-notice"') && html.includes('type="module"'));
 writeFileSync(resolve(output, "index.html"), html);
 copyFileSync(resolve(root, "demo/recording.json"), resolve(output, "demo/recording.json"));
 console.log(`Static Vercel replay built: ${recording.frames.length} recorded synthetic events. No Python runtime or live ingestion required.`);
+
+
+const security = JSON.parse(readFileSync(resolve(root, "vercel.json"), "utf8"));
+writeFileSync(resolve(output, "vercel.json"), JSON.stringify({ headers: security.headers }, null, 2));

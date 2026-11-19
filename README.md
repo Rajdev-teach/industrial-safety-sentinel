@@ -143,3 +143,8 @@ The repository includes a seeded screenshot and short MP4 showing simulated live
 
 This is a portfolio demonstration, not a certified safety system. Production deployment requires validated sensors, approved camera governance, human review, documented thresholds, cybersecurity controls, and compliance with site policies and applicable regulations.
 
+
+
+## Browser security
+
+The release includes a restrictive Content Security Policy, blocks framing, disables unused device permissions, suppresses cross-site referrers, and sets MIME-type and window isolation protections. Include the generated `vercel.json` when uploading the static release. Only the browser demonstration and sample assets are published; there is no shared application database or privileged API in this static deployment. Client-side code and sample data are intentionally inspectable.
